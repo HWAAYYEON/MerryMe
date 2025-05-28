@@ -1,7 +1,72 @@
+@font-face {
+  font-family: "DungGeunMo";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 화면 전체 높이 */
+  margin: 0;
+  background-color: white; /* 필요 시 배경 색 */
+}
+
+.background {
+  position: relative;
+  display: inline-block;
+}
+
+h2 {
+  position: absolute;
+  left: 250px;
+  color: rgb(215, 245, 232);
+  font-size: 100px;
+  font-family: "DungGeunMo";
+  letter-spacing: 10px;
+  /*나중에 둥둥 떠다니는 애니 넣기*/
 }
 
 h1 {
-  color: white;
+  position: absolute;
+  left: 350px;
+  top: 80px;
+  color: rgb(215, 245, 232);
+  font-size: 160px;
+  font-family: "DungGeunMo";
+  letter-spacing: 10px;
+  /*나중에 둥둥 떠다니는 애니 넣기*/
+}
+
+#grass {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  position: absolute;
+  top: 40px;
+  right: 100px;
+}
+
+.ky {
+  position: absolute;
+  top: 90px;
+  left: 30px;
+  width: 150px;
+}
+
+.hy {
+  position: absolute;
+  top: 90px;
+  right: 30px;
+  width: 100px;
+}
+
+.btn img {
+  width: 90px;
 }
