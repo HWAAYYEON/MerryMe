@@ -47,13 +47,10 @@ h1 {
   height: auto;
 }
 
-.btn {
-  position: absolute;
-  top: 40px;
-  right: 120px;
-}
-
 .btnjp {
+  position: absolute;
+  top: 30px;
+  right: 50px;
   width: 100px;
   height: 35px;
   font-size: 28px;
@@ -72,8 +69,4 @@ h1 {
   top: 90px;
   right: 30px;
   width: 100px;
-}
-
-.btn img {
-  width: 90px;
 }
