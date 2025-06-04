@@ -45,18 +45,15 @@ body {
   position: absolute;
   top: 30px;
   right: 25px;
-  width: 80px;
-  height: 35px;
+  width: min(10.5vw, 80px);
+  height: min(5.5vw, 35px);
   font-size: 28px;
   font-family: "DungGeunMo";
 }
 
 .text-wrap {
   text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50px;
-  transform: translateX(-50%);
+  padding-top: 80px;
 }
 h2 {
   /*아래 폰트 사이즈로 화면 크기에 따라 반응하도록 함. 최소 지금 폰트 사이즈/1920*100을 해서 비율을 알아낼 수 있음*/
@@ -114,16 +111,18 @@ h6 {
   position: absolute;
   top: 90px;
   left: 30px;
-  width: 120px;
+  width: min(15.5vw, 120px);
 }
 
 .hy {
   position: absolute;
   top: 90px;
   right: 30px;
-  width: 80px;
+  width: min(10.5vw, 80px);
 }
 
+/*앱솔루트를 안 주는 게 좋음. 자꾸 고정하느니 그냥 밀려밀려 두는 게 나음
+*/
 .thanks {
   background-color: azure;
   border: 3px solid rgb(186, 181, 181);
@@ -131,11 +130,8 @@ h6 {
   width: min(50vw, 400px);
   color: rgb(6, 34, 6);
   text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 350px;
-  transform: translateX(-50%);
   font-size: min(2vw, 20px);
+  margin: 50px auto;
 }
 
 @media (max-width: 768px) {
@@ -145,8 +141,25 @@ h6 {
 }
 
 .link {
-  position: absolute;
   width: 60px;
-  top: 650px;
   left: 30px;
+}
+
+.link img {
+  width: 100%;
+  animation: link infinite steps(1) 1s;
+  /*링크 애니메이션 주고, 계속 반복, 스텝스는 1단계씩 끊어라, 1초마다*/
+  transform-origin: center bottom;
+  /*애니메이션 축 조절하는 코드, 종축은 센터, 횡축은 맨 아래*/
+}
+
+/*스케일 가로 100% 세로 100%에서 세로를 줄이는 애니메이션*/
+@keyframes link {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 0.95);
+  }
 }
