@@ -6,67 +6,147 @@
   font-style: normal;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* 화면 전체 높이 */
   margin: 0;
   background-color: white; /* 필요 시 배경 색 */
+  font-family: "DungGeunMo";
 }
 
 .background {
   position: relative;
   display: inline-block;
-}
-
-h2 {
-  position: absolute;
-  left: 250px;
-  color: rgb(215, 245, 232);
-  font-size: 100px;
-  font-family: "DungGeunMo";
-  letter-spacing: 10px;
-  /*나중에 둥둥 떠다니는 애니 넣기*/
-}
-
-h1 {
-  position: absolute;
-  left: 350px;
-  top: 80px;
-  color: rgb(215, 245, 232);
-  font-size: 160px;
-  font-family: "DungGeunMo";
-  letter-spacing: 10px;
-  /*나중에 둥둥 떠다니는 애니 넣기*/
+  width: 100%;
+  max-width: 800px;
+  background-image: url("/img0528/bg.png");
+  background-position: center center;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  min-height: 100vh;
 }
 
 #grass {
   display: block;
-  max-width: 100%;
+  width: 800px;
   height: auto;
 }
-
 .btnjp {
   position: absolute;
   top: 30px;
-  right: 50px;
-  width: 100px;
+  right: 25px;
+  width: 80px;
   height: 35px;
   font-size: 28px;
   font-family: "DungGeunMo";
+}
+
+.text-wrap {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+}
+h2 {
+  /*아래 폰트 사이즈로 화면 크기에 따라 반응하도록 함. 최소 지금 폰트 사이즈/1920*100을 해서 비율을 알아낼 수 있음*/
+  color: rgb(215, 245, 232);
+  font-size: min(8.15vw, 80px);
+
+  letter-spacing: 10px;
+  /*나중에 둥둥 떠다니는 애니 넣기*/
+}
+
+/*
+모바일 환경에서(위드가 768이 됐을 때는 폰트 사이즈를 5.5wv에서 멈출 것이다.ㄴ
+@media (max-width: 768px) {
+  h2 {
+    font-size: 5.5vw;
+  }
+}
+  */
+
+h1 {
+  color: rgb(215, 245, 232);
+  font-size: min(15.3333vw, 160px);
+
+  letter-spacing: 10px;
+  margin: 5px 0;
+  /*나중에 둥둥 떠다니는 애니 넣기*/
+}
+
+h3 {
+  color: rgb(215, 245, 232);
+  font-size: min(3vw, 80px);
+
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 3vw;
+  }
+}
+
+h6 {
+  color: rgb(215, 245, 232);
+  margin: 15px 0;
+  font-size: min(2vw, 160px);
+}
+
+@media (max-width: 768px) {
+  h6 {
+    font-size: 2.5vw;
+  }
 }
 
 .ky {
   position: absolute;
   top: 90px;
   left: 30px;
-  width: 150px;
+  width: 120px;
 }
 
 .hy {
   position: absolute;
   top: 90px;
   right: 30px;
-  width: 100px;
+  width: 80px;
+}
+
+.thanks {
+  background-color: azure;
+  border: 3px solid rgb(186, 181, 181);
+  box-shadow: 5px 5px 5px rgb(123, 121, 121);
+  width: min(50vw, 400px);
+  color: rgb(6, 34, 6);
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 350px;
+  transform: translateX(-50%);
+  font-size: min(2vw, 20px);
+}
+
+@media (max-width: 768px) {
+  .thanks {
+    font-size: 2vw;
+  }
+}
+
+.link {
+  position: absolute;
+  width: 60px;
+  top: 650px;
+  left: 30px;
 }
