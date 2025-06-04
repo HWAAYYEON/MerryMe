@@ -112,14 +112,14 @@ h6 {
 .ky {
   position: absolute;
   top: 90px;
-  left: 5%;
+  left: 3%;
   width: min(15.5vw, 120px);
 }
 
 .hy {
   position: absolute;
   top: 90px;
-  right: 5%;
+  right: 3%;
   width: min(10.5vw, 80px);
 }
 
@@ -133,7 +133,7 @@ h6 {
   color: rgb(6, 34, 6);
   text-align: center;
   font-size: min(2vw, 20px);
-  margin: 50px auto;
+  margin: 30px auto;
 }
 
 @media (max-width: 768px) {
