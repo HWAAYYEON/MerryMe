@@ -49,6 +49,7 @@ body {
   height: min(5.5vw, 35px);
   font-size: 100%;
   font-family: "DungGeunMo";
+  color: black;
 }
 
 .text-wrap {
