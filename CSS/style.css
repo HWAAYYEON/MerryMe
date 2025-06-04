@@ -43,6 +43,7 @@ body {
 }
 .btnjp {
   position: absolute;
+  text-align: center;
   top: 30px;
   right: 25px;
   width: min(10.5vw, 80px);
