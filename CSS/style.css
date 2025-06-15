@@ -178,6 +178,7 @@ h6 {
 }
 
 .link_balloon {
+  margin-top: 10%;
   position: relative;
   width: min(50vw, 250px);
 }
@@ -188,7 +189,7 @@ h6 {
 
 .linksaid {
   position: absolute;
-  font-size: min(2vw, 22px);
+  font-size: min(2vw, 25px);
   left: 12%;
   top: 40%;
 }
@@ -197,27 +198,14 @@ h6 {
 .chief {
   margin-top: -5%;
   margin-left: 90%;
-  width: min(12.5vw, 60px);
+  width: min(13vw, 70px);
 }
 
 .chief img {
   width: 100%;
-  animation: chief infinite steps(1) 1s;
-  /*링크 애니메이션 주고, 계속 반복, 스텝스는 1단계씩 끊어라, 1초마다*/
+  animation: link infinite steps(1) 1s;
   transform-origin: center bottom;
-  /*애니메이션 축 조절하는 코드, 종축은 센터, 횡축은 맨 아래*/
 }
-
-@keyframes chief {
-  0%,
-  100% {
-    transform: scale(1, 1);
-  }
-  50% {
-    transform: scale(1, 0.95);
-  }
-}
-
 .chief_balloon {
   margin-left: 60%;
   position: relative;
@@ -231,7 +219,36 @@ h6 {
 
 .chiefsaid {
   position: absolute;
-  font-size: min(2vw, 22px);
+  font-size: min(1.2vw, 18px);
+  left: 12%;
+  top: 40%;
+}
+
+/*-----------------------------커비-많관부------------------------------*/
+.kirby {
+  margin-top: -5%;
+  margin-left: 30px;
+  width: min(12.5vw, 60px);
+}
+
+.kirby img {
+  width: 100%;
+  animation: link infinite steps(1) 1s;
+  transform-origin: center bottom;
+}
+
+.kirby_balloon {
+  position: relative;
+  width: min(50vw, 250px);
+}
+
+.kirby_balloon img {
+  width: 100%;
+}
+
+.kirbysaid {
+  position: absolute;
+  font-size: min(2vw, 25px);
   left: 12%;
   top: 40%;
 }
