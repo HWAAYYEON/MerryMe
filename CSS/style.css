@@ -6,6 +6,11 @@
   font-style: normal;
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 h1,
 h2,
 h3,
@@ -24,6 +29,7 @@ body {
   font-family: "DungGeunMo";
 }
 
+/*-----------------------------배경------------------------------*/
 .background {
   position: relative;
   display: inline-block;
@@ -41,6 +47,7 @@ body {
   width: 800px;
   height: auto;
 }
+
 .btnjp {
   position: absolute;
   text-align: center;
@@ -53,6 +60,7 @@ body {
   color: black;
 }
 
+/*-----------------------------큰 정보------------------------------*/
 .text-wrap {
   text-align: center;
   padding-top: 80px;
@@ -109,6 +117,7 @@ h6 {
   }
 }
 
+/*---------------------------경원 화연 캐릭터------------------------------*/
 .ky {
   position: absolute;
   top: 90px;
@@ -123,16 +132,16 @@ h6 {
   width: min(10.5vw, 80px);
 }
 
-/*앱솔루트를 안 주는 게 좋음. 자꾸 고정하느니 그냥 밀려밀려 두는 게 나음
-*/
+/*-----------------------------감사 인사말 창------------------------------*/
+/*앱솔루트를 안 주는 게 좋음. 자꾸 고정하느니 그냥 밀려밀려 두는 게 나음*/
 .thanks {
   background-color: azure;
-  border: 3px solid rgb(186, 181, 181);
+  border: 4px solid rgb(186, 181, 181);
   box-shadow: 5px 5px 5px rgb(123, 121, 121);
   width: min(50vw, 400px);
   color: rgb(6, 34, 6);
   text-align: center;
-  font-size: min(2vw, 20px);
+  font-size: min(2vw, 22px);
   margin: 30px auto;
 }
 
@@ -142,9 +151,11 @@ h6 {
   }
 }
 
+/*-----------------------------링크-날짜, 위치------------------------------*/
 .link {
-  width: 60px;
-  left: 30px;
+  margin-top: -5%;
+  margin-left: 30px;
+  width: min(12.5vw, 60px);
 }
 
 .link img {
@@ -164,4 +175,61 @@ h6 {
   50% {
     transform: scale(1, 0.95);
   }
+}
+
+.link_balloon {
+  position: relative;
+  width: min(50.5vw, 300px);
+}
+
+.link_balloon img {
+  width: 100%;
+}
+
+.linksaid {
+  position: absolute;
+  left: 12%;
+  top: 40%;
+}
+
+/*-----------------------------마스터치프-피로연 안내------------------------------*/
+.chief {
+  margin-top: -5%;
+  margin-left: 90%;
+  width: min(12.5vw, 60px);
+}
+
+.chief img {
+  width: 100%;
+  animation: chief infinite steps(1) 1s;
+  /*링크 애니메이션 주고, 계속 반복, 스텝스는 1단계씩 끊어라, 1초마다*/
+  transform-origin: center bottom;
+  /*애니메이션 축 조절하는 코드, 종축은 센터, 횡축은 맨 아래*/
+}
+
+@keyframes chief {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 0.95);
+  }
+}
+
+.chief_balloon {
+  margin-left: 60%;
+  position: relative;
+  width: min(50.5vw, 300px);
+}
+
+.chief_balloon img {
+  transform: scaleX(-1);
+  width: 100%;
+}
+
+.chiefsaid {
+  position: absolute;
+  left: 12%;
+  top: 40%;
 }
