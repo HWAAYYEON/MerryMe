@@ -179,7 +179,7 @@ h6 {
 
 .link_balloon {
   position: relative;
-  width: min(50.5vw, 300px);
+  width: min(50vw, 250px);
 }
 
 .link_balloon img {
@@ -188,6 +188,7 @@ h6 {
 
 .linksaid {
   position: absolute;
+  font-size: min(2vw, 22px);
   left: 12%;
   top: 40%;
 }
@@ -220,7 +221,7 @@ h6 {
 .chief_balloon {
   margin-left: 60%;
   position: relative;
-  width: min(50.5vw, 300px);
+  width: min(50vw, 250px);
 }
 
 .chief_balloon img {
@@ -230,6 +231,7 @@ h6 {
 
 .chiefsaid {
   position: absolute;
+  font-size: min(2vw, 22px);
   left: 12%;
   top: 40%;
 }
