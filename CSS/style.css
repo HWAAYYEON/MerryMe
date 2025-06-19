@@ -300,6 +300,18 @@ h6 {
 }
 
 .moneywrap img {
-  width: min(14vw, 100px);
+  width: min(19vw, 100px);
   animation: link infinite steps(1) 1s;
+}
+
+/*-----------------------------꽃아치------------------------------*/
+
+.flower {
+  width: 100%;
+}
+
+.flower img {
+  width: 350px;
+  margin: 50%;
+  transform: translateX(calc(-50%));
 }
