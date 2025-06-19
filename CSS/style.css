@@ -270,11 +270,12 @@ h6 {
 #daumRoughmapContainer1750329121574 {
   margin-left: 30px;
   margin-top: 30px;
+  width: 60%;
 }
 
 .kupa {
   margin-left: 30px;
-  width: min(14vw, 70px);
+  width: min(16vw, 70px);
 }
 
 .kupa img {
@@ -295,7 +296,7 @@ h6 {
 /*-----------------------------추긔금------------------------------*/
 .moneywrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
 }
 
