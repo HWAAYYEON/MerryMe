@@ -28,8 +28,10 @@
       <img class="hy" src="./img0528/hydown.png" alt="" />
       <div class="greeting">
         <figure class="link_balloon">
-          <img src="./img0528/balloon.png" alt="" ></img>
-                  <p class="linksaid">20xx년 xx월 xx일 XX시 XX분<br>xxxxx에서 결혼식을 올립니다.</p>
+          <img src="./img0528/balloon.png" alt="" />
+          <p class="linksaid">
+            20xx년 xx월 xx일 XX시 XX분<br />xxxxx에서 결혼식을 올립니다.
+          </p>
         </figure>
         <figure class="link">
           <img src="./img0528/link.png" alt="" />
@@ -37,31 +39,68 @@
       </div>
       <div class="piro">
         <figure class="chief_balloon">
-          <img src="./img0528/balloon.png" alt="" ></img>
-                  <p class="chiefsaid">피로연은 어디어디에서 언제언제까지 합니다.<br>주차장은 어쩌고</p>
+          <img src="./img0528/balloon.png" alt="" />
+          <p class="chiefsaid">
+            피로연은 어디어디에서 언제언제까지 합니다.<br />주차장은 어쩌고
+          </p>
         </figure>
         <figure class="chief">
           <img src="./img0528/chief.png" alt="" />
         </figure>
       </div>
-       <div class="mangwan">
+      <div class="mangwan">
         <figure class="kirby_balloon">
-          <img src="./img0528/balloon.png" alt="" ></img>
-                  <p class="kirbysaid">함께 자리해 주시면 감사하겠다.</p>
+          <img src="./img0528/balloon.png" alt="" />
+          <p class="kirbysaid">함께 자리해 주시면 감사하겠다.</p>
         </figure>
         <figure class="kirby">
           <img src="./img0528/kirby.png" alt="" />
         </figure>
       </div>
       <div class="map">
-
         <figure class="kupa">
           <img src="./img0528/mario.png" alt="" />
         </figure>
-                <figure class="kupa_balloon">
-          <img src="./img0528/balloon.png" alt="" ></img>
-        </figure>
+        <div
+          id="daumRoughmapContainer1750329121574"
+          class="root_daum_roughmap root_daum_roughmap_landing"
+        ></div>
+      </div>
+      <div class="moneywrap">
+        <div class="forky">
+          <p>신랑에게</p>
+          <figure><img src="./img0528/money.png" alt="" /></figure>
+          <p>축하의 마음 전하기</p>
+        </div>
+        <div class="forhy">
+          <p>신부에게</p>
+          <figure><img src="./img0528/money.png" alt="" /></figure>
+          <p>축하의 마음 전하기</p>
+        </div>
       </div>
     </div>
+
+    <!-- * 카카오맵 - 지도퍼가기 -->
+    <!-- 1. 지도 노드 -->
+
+    <!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+    <script
+      charset="UTF-8"
+      class="daum_roughmap_loader_script"
+      src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+    ></script>
+
+    <!-- 3. 실행 스크립트 -->
+    <script charset="UTF-8">
+      new daum.roughmap.Lander({
+        timestamp: "1750329121574",
+        key: "3thcvuz4ber",
+        mapWidth: "100%",
+        mapHeight: "100%",
+      }).render();
+    </script>
   </body>
 </html>

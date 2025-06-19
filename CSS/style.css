@@ -192,13 +192,14 @@ h6 {
   padding-right: 6%;
   font-size: min(2.8vw, 22px);
   left: 12%;
-  top: 40%;
+  top: 50%;
+  transform: translateY(calc(-50% - 10px));
 }
 
 /*-----------------------------마스터치프-피로연 안내------------------------------*/
 .chief {
   margin-top: -5%;
-  margin-left: 90%;
+  margin-left: auto;
   width: min(13vw, 70px);
 }
 
@@ -208,7 +209,7 @@ h6 {
   transform-origin: center bottom;
 }
 .chief_balloon {
-  margin-left: 60%;
+  margin-left: auto;
   position: relative;
   width: min(50vw, 250px);
 }
@@ -223,7 +224,8 @@ h6 {
   padding-right: 6%;
   font-size: min(2.8vw, 22px);
   left: 12%;
-  top: 40%;
+  top: 50%;
+  transform: translateY(calc(-50% - 10px));
 }
 
 /*-----------------------------커비-많관부------------------------------*/
@@ -253,7 +255,8 @@ h6 {
   padding-right: 6%;
   font-size: min(2.8vw, 22px);
   left: 12%;
-  top: 40%;
+  top: 50%;
+  transform: translateY(calc(-50% - 10px));
 }
 
 /*-----------------------------쿠파-지도------------------------------*/
@@ -261,10 +264,15 @@ h6 {
   display: flex;
   justify-content: flex-start;
   align-content: flex-start;
+  margin-top: 30px;
+}
+
+#daumRoughmapContainer1750329121574 {
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .kupa {
-  margin-top: 55%;
   margin-left: 30px;
   width: min(12.5vw, 60px);
 }
@@ -282,4 +290,15 @@ h6 {
 
 .kupa_balloon img {
   width: 100%;
+}
+
+/*-----------------------------추긔금------------------------------*/
+.moneywrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.moneywrap img {
+  width: min(12.5vw, 60px);
 }
