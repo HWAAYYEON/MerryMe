@@ -298,4 +298,5 @@ h6 {
 
 .moneywrap img {
   width: min(12.5vw, 60px);
+  animation: link infinite steps(1) 1s;
 }
