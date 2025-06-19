@@ -189,7 +189,7 @@ h6 {
 
 .linksaid {
   position: absolute;
-  font-size: min(2vw, 25px);
+  font-size: min(1.3vw, 25px);
   left: 12%;
   top: 40%;
 }
@@ -219,7 +219,7 @@ h6 {
 
 .chiefsaid {
   position: absolute;
-  font-size: min(1.2vw, 18px);
+  font-size: min(1.3vw, 25px);
   left: 12%;
   top: 40%;
 }
@@ -248,7 +248,7 @@ h6 {
 
 .kirbysaid {
   position: absolute;
-  font-size: min(2vw, 25px);
+  font-size: min(1.3vw, 25px);
   left: 12%;
   top: 40%;
 }
