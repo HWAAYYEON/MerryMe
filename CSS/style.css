@@ -189,7 +189,8 @@ h6 {
 
 .linksaid {
   position: absolute;
-  font-size: min(1.3vw, 25px);
+  padding-right: 6%;
+  font-size: min(2.8vw, 22px);
   left: 12%;
   top: 40%;
 }
@@ -219,7 +220,8 @@ h6 {
 
 .chiefsaid {
   position: absolute;
-  font-size: min(1.3vw, 25px);
+  padding-right: 6%;
+  font-size: min(2.8vw, 22px);
   left: 12%;
   top: 40%;
 }
