@@ -260,17 +260,13 @@ h6 {
 }
 
 /*-----------------------------쿠파-지도------------------------------*/
-.map {
-  display: flex;
-  justify-content: flex-start;
-  align-content: flex-start;
-  margin-top: 30px;
-}
 
 #daumRoughmapContainer1750329121574 {
   margin-left: 30px;
   margin-top: 30px;
-  width: 60%;
+  width: 80%;
+  height: 100%;
+  font-size: smaller;
 }
 
 .kupa {
