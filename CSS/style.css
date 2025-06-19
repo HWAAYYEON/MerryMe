@@ -264,8 +264,7 @@ h6 {
 #daumRoughmapContainer1750329121574 {
   margin-left: 30px;
   margin-top: 30px;
-  width: 100%;
-  height: 60%;
+
   font-size: smaller;
 }
 
@@ -294,9 +293,13 @@ h6 {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  margin-top: 30px;
+  text-align: center;
+  font-size: min(2.8vw, 22px);
+  color: rgb(13, 63, 13);
 }
 
 .moneywrap img {
-  width: min(12.5vw, 60px);
+  width: min(14vw, 100px);
   animation: link infinite steps(1) 1s;
 }
